@@ -19,7 +19,6 @@ $('.navbar-toggler').on('click', function(){
   		$(this).toggleClass('icon--active');
 });
 
-
 // Tween Animations for Navbar
 // var $navbar = $("nav.index-nav");
 
@@ -53,20 +52,4 @@ TweenMax.from($footer, 1, {
 	y: 100,
 	scale: 0.3,
 	ease: Power4.easeOut
-});
-
-//Tween Animations for About Page
-var $aboutInfo = $('#about .info');
-
-TweenMax.staggerFrom($aboutInfo, 0.7, {
-	y: 200,
-	opacity: 0,
-	ease: Back.easeOut
-}, 0.7);
-
-
-$('.report-card.treehouse').reportCard({
-    userName: 'alexbrasovan',
-    site: 'treehouse',
-    badgesAmount: 5
 });
